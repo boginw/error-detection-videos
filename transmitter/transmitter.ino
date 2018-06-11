@@ -25,7 +25,7 @@ void setup() {
   lcd.setCursor(0, 0);
   lcd.print(message);
 
-  for (int byte_idx = 0; byte_idx < strlen(message); byte_idx++) {
+  for (int byte_idx = 0, msg_len = strlen(message); byte_idx < msg_len; byte_idx++) {
     char tx_byte = message[byte_idx];
 
     // Clear the second line of the display
